@@ -1,0 +1,131 @@
+
+<html>
+<head>
+    
+    <title>game</title>
+ <style>
+ *{
+     margin: none;
+     padding: none;
+ }
+ #body{
+     background: black;
+ }
+     #box{
+         
+         height: 500px;
+         width: 350px;
+         border-line: 2px solid black;
+         margin: 1rem auto;
+         background-color:blue;
+         overflow: hidden;
+        
+        
+     }
+     #obstacle{
+         height: 90px;
+         width: 50px;
+         border:1px solid black ;
+         border-radius: 15px;
+         background-color: green;
+         position: relative;
+         animation:b 1.6s infinite linear;
+         left:0px;
+         
+     }
+     @keyframes b{
+         100%{top:700px;}
+         40%{top;200px;}
+         0%{top:-5px;}
+     }
+     #car{
+         width: 50px;
+         height:60px;
+         background-color: red;
+         position:relative;
+         top: 440px;
+         left: 260px;
+         border-radius: 10px;
+     }
+#left{
+    font-size: 40px;
+}
+#right{
+    font-size: 40px;
+}
+#mid{
+    font-size: 40px;
+}
+#head{
+    text-align: center ;
+    background: green;
+    color: white;
+}
+#control{
+    text-align: center;
+    align-items: center;
+}
+     
+ </style>
+ 
+</head>
+
+<body id="body">
+    <h1 id="head"> CAR GAME </h1>
+<div id="box">
+    <div id="car">
+       Your Car
+    </div>
+    <div id="obstacle">
+        
+    </div>
+    <div class="car1">
+        
+    </div>
+    <div class="car2">
+        
+    </div>
+</div>
+
+<div class="end">
+    Game Over
+</div>
+
+<div class="control">
+    
+bdbdbhehehegegrgrhrhrhrhrhrhghhhrhrhr   
+    <input type="button" value="left" id="left" name="submit" onclick="document.getElementById('car').style.left ='0px';"/>
+    <text>  bbs </text>
+    <input type="button" value="mid" id="mid" name="submit" onclick="document.getElementById('car').style.left ='130px';"/>
+    <text>=$° $°</text>
+<input type="button" value="right" id="right" name="submit"onclick="document.getElementById('car').style.left ='260px';"/>
+
+</div>
+<script>
+
+let x = document.getElementById('obstacle');
+x.addEventListener("animationiteration",function(){
+    var random=(Math.floor(Math.random()*3)*130);
+    document.getElementById('obstacle').style.left= random +"px";
+})
+    
+    
+ setInterval(function a(){ var ob=parseInt(window.getComputedStyle(obstacle).getPropertyValue("top"));
+var ol=parseInt(window.getComputedStyle(obstacle).getPropertyValue("left"));
+
+var cl=parseInt(window.getComputedStyle(car).getPropertyValue("left"));
+
+
+if(ob> 300 && ob < 500 && ol===cl){
+box.style.display="none";
+ control.style.display="none";
+ result.style.display="end"
+ 
+}
+},100)
+
+</script>
+
+
+</body>
+</html>
