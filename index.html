@@ -35,7 +35,7 @@
      }
      @keyframes b{
          100%{top:700px;}
-         40%{top;200px;}
+         40%{top;300px;}
          0%{top:-5px;}
      }
      #car{
@@ -116,13 +116,13 @@ var ol=parseInt(window.getComputedStyle(obstacle).getPropertyValue("left"));
 var cl=parseInt(window.getComputedStyle(car).getPropertyValue("left"));
 
 
-if(ob> 300 && ob < 500 && ol===cl){
+if(ob> 320 && ob < 500 && ol===cl){
 box.style.display="none";
  control.style.display="none";
  result.style.display="end"
  
 }
-},100)
+},50)
 
 </script>
 
