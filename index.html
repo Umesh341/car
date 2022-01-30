@@ -29,7 +29,8 @@
          border:1px solid black ;
          border-radius: 15px;
          background:url(blue.png);
-         background-size:contain;
+         background-width:50px;
+         background-height:90px
          position: relative;
          animation:b 1.6s infinite linear;
          left:0px;
@@ -44,7 +45,8 @@
          width: 50px;
          height:60px;
          background:url(race.png);
-         background-size: contain;
+         background-height:50px;
+         background-width:50px;
          position:relative;
          top: 440px;
          left: 260px;
@@ -129,7 +131,7 @@ var ol=parseInt(window.getComputedStyle(obstacle).getPropertyValue("left"));
 var cl=parseInt(window.getComputedStyle(car).getPropertyValue("left"));
 
 
-if(ob> 320 && ob < 500 && ol===cl){
+if(ob> 360 && ob < 500 && ol===cl){
 box.style.display="none";
  control.style.display="none";
  result.style.display="end"
